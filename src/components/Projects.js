@@ -1,45 +1,51 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+
+import SBC from "../assets/img/p_int_SBC.jpg";
+import Dispenser from "../assets/img/p_int_Dispenser.jpg";
+import FlyAway from "../assets/img/p_mech_FlyAway.png";
+import STM32 from "../assets/img/p_elec_STM32.png";
+
+/*import colorSharp2 from "../assets/img/color-sharp2.png";*/
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  // ========================
+  // Added pdfLink property for each project
+  // ========================
+  const integratedProjects = [
     {
-      title: "Business Startup",
+      title: "Self-Balancing-Car",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: SBC,
+      pdfLink: "https://drive.google.com/file/d/1MZeizbA1FUlg0yyxw8mMjRZy7h23uNA9/view?usp=sharing" // replace with your link
     },
     {
-      title: "Business Startup",
+      title: "Automated Medicine Dispenser",
       description: "Design & Development",
-      imgUrl: projImg2,
-    },
+      imgUrl: Dispenser,
+      pdfLink: "https://drive.google.com/file/d/1e8qouIl-8MBnffIzAqf4by8FzWnozfAD/view?usp=sharing"
+    }
+  ];
+
+  const mechanicalProjects = [
     {
-      title: "Business Startup",
+      title: "Fly Away",
       description: "Design & Development",
-      imgUrl: projImg3,
-    },
+      imgUrl: FlyAway,
+      pdfLink: "https://drive.google.com/file/d/1bjrTuRgPQArL8778fuUiN45bvxAUjqu-/view?usp=sharing"
+    }
+  ];
+
+  const electricalProjects = [
     {
-      title: "Business Startup",
+      title: "Custom STM32 Board",
       description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+      imgUrl: STM32,
+      pdfLink: "https://drive.google.com/file/d/19vRxLAOZLosynla7FLLBhjjHPAgdbxXo/view?usp=sharing"
+    }
   ];
 
   return (
@@ -51,39 +57,46 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>
+                  These projects showcase my experience working across multiple disciplines, 
+                  from programming and circuit design to CAD modeling and prototyping! 
+                  I enjoy building systems that bring multiple engineering fields together.
+                </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Integrated</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Mechanical</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Electrical</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content>
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                        {integratedProjects.map((project, index) => (
+                          <ProjectCard key={index} {...project} />
+                        ))}
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {mechanicalProjects.map((project, index) => (
+                          <ProjectCard key={index} {...project} />
+                        ))}
+                      </Row>
                     </Tab.Pane>
+
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row>
+                        {electricalProjects.map((project, index) => (
+                          <ProjectCard key={index} {...project} />
+                        ))}
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
@@ -92,7 +105,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
 }

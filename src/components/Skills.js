@@ -1,11 +1,12 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import CAD from "../assets/img/s_CAD.png";
+import PCB from "../assets/img/s_PCB.png";
+import Prototyping from "../assets/img/s_Prototyping.png";
+import Programming from "../assets/img/s_Programming.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import skillsBG from "../assets/img/Skills_BG.png"
 
 export const Skills = () => {
   const responsive = {
@@ -35,30 +36,30 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Studying Mechatronics Engineering allows me to explore a wide range of skills,<br></br>from 3D CAD and prototyping to programming and electronics.<br></br> These are some of the technical skills I’ve developed through hands-on projects.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={CAD} alt="Image" />
+                                <h5>CAD</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={Prototyping} alt="Image" />
+                                <h5>Prototyping</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={PCB} alt="Image" />
+                                <h5>PCB Design</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={Programming} alt="Image" />
+                                <h5>Programming</h5>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={skillsBG} alt="Image" />
     </section>
   )
 }
