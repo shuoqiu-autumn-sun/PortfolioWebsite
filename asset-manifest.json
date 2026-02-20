@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/PortfolioWebsite/static/css/main.d855baf1.css",
+    "main.js": "/PortfolioWebsite/static/js/main.7d4e6416.js",
+    "static/js/787.fb771931.chunk.js": "/PortfolioWebsite/static/js/787.fb771931.chunk.js",
+    "static/media/p_mech_FlyAway.png": "/PortfolioWebsite/static/media/p_mech_FlyAway.1d19f5c494a612b1f4ab.png",
+    "static/media/FrontPageCombo.png": "/PortfolioWebsite/static/media/FrontPageCombo.e280f3411526f4ae8821.png",
+    "static/media/p_elec_STM32.png": "/PortfolioWebsite/static/media/p_elec_STM32.61ca56de702909e6681e.png",
+    "static/media/s_CAD.png": "/PortfolioWebsite/static/media/s_CAD.dad4555e946736fc1af9.png",
+    "static/media/s_Prototyping.png": "/PortfolioWebsite/static/media/s_Prototyping.a3751193ca42375a7ac7.png",
+    "static/media/s_PCB.png": "/PortfolioWebsite/static/media/s_PCB.795b102a7ab168c43ec8.png",
+    "static/media/Background.png": "/PortfolioWebsite/static/media/Background.b596f0261d676fe55b0b.png",
+    "static/media/s_Programming.png": "/PortfolioWebsite/static/media/s_Programming.cc57260374613c77aa37.png",
+    "static/media/fullHeadShot.jpg": "/PortfolioWebsite/static/media/fullHeadShot.d46be4e5ee76b1138694.jpg",
+    "static/media/p_int_Dispenser.jpg": "/PortfolioWebsite/static/media/p_int_Dispenser.f8d37b80a34f758fc6e0.jpg",
+    "static/media/CentraNo2-Bold.ttf": "/PortfolioWebsite/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/PortfolioWebsite/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/p_int_SBC.jpg": "/PortfolioWebsite/static/media/p_int_SBC.ca0573c5d03b49249b83.jpg",
+    "static/media/CentraNo2-Book.ttf": "/PortfolioWebsite/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/myLogo.png": "/PortfolioWebsite/static/media/myLogo.f9dcd4bd9291b4f61fac.png",
+    "static/media/Skills_BG.png": "/PortfolioWebsite/static/media/Skills_BG.e388ece81604ceef4322.png",
+    "static/media/revicons.eot": "/PortfolioWebsite/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/PortfolioWebsite/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/PortfolioWebsite/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/logo.svg": "/PortfolioWebsite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/PortfolioWebsite/index.html",
+    "static/media/arrow2.svg": "/PortfolioWebsite/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
+    "static/media/arrow1.svg": "/PortfolioWebsite/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
+    "main.d855baf1.css.map": "/PortfolioWebsite/static/css/main.d855baf1.css.map",
+    "main.7d4e6416.js.map": "/PortfolioWebsite/static/js/main.7d4e6416.js.map",
+    "787.fb771931.chunk.js.map": "/PortfolioWebsite/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d855baf1.css",
+    "static/js/main.7d4e6416.js"
+  ]
+}
