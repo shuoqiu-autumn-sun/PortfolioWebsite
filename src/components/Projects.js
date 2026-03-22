@@ -35,7 +35,7 @@ export const Projects = () => {
       title: "Fly Away",
       description: "Design & Development",
       imgUrl: FlyAway,
-      pdfLink: "https://drive.google.com/file/d/1bjrTuRgPQArL8778fuUiN45bvxAUjqu-/view?usp=sharing"
+      pdfLink: "https://drive.google.com/file/d/1xXazAqK6pql_Fg3gMd1qoPGPkdlSxseF/view?usp=sharing"
     }
   ];
 
