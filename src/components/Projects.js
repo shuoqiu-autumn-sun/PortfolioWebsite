@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 
 import SBC from "../assets/img/p_int_SBC.jpg";
 import Dispenser from "../assets/img/p_int_Dispenser.jpg";
-import FlyAway from "../assets/img/p_mech_FlyAway.png";
+import FlyAway from "../assets/img/fly_away.png";
 import STM32 from "../assets/img/p_elec_STM32.png";
 
 /*import colorSharp2 from "../assets/img/color-sharp2.png";*/
@@ -35,7 +35,7 @@ export const Projects = () => {
       title: "Fly Away",
       description: "Design & Development",
       imgUrl: FlyAway,
-      pdfLink: "https://drive.google.com/file/d/1xXazAqK6pql_Fg3gMd1qoPGPkdlSxseF/view?usp=sharing"
+      pdfLink: "https://drive.google.com/file/d/18EOAf7IW8eCvLHsf5t2BcApfc62UWQq1/view?usp=sharing"
     }
   ];
 
