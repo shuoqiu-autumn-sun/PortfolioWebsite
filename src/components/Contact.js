@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/headshot_bright.jpg";
+import contactImg from "../assets/img/headshot_bright.png";
 import { EnvelopeFill, Linkedin, Github } from "react-bootstrap-icons";
 
 export const Contact = () => {
